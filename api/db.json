@@ -1,0 +1,37 @@
+{
+    "products": [
+      { 
+        "id": 1, 
+        "name": "Delicious Camisole", 
+        "price": "78.00" ,
+        "img": "https://cdn.dsmcdn.com//ty14/product/media/images/20201006/16/13767195/89613972/1/1_org.jpg",
+        "sizes" : ["Small","Large"],
+        "category": "T-Shirt",
+        "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
+      },
+      { 
+        "id": 2, 
+        "name": "Delicious Camisole 2", 
+        "price": "45.00" ,
+        "img": "https://cdn.dsmcdn.com//ty14/product/media/images/20201006/16/13767195/89613972/1/1_org.jpg",
+        "sizes" : ["Small","Large","Medium"],
+        "category": "Hoodie"
+      },
+      { 
+        "id": 3, 
+        "name": "Delicious Camisole 3", 
+        "price": "12.00" ,
+        "img": "https://cdn.dsmcdn.com//ty14/product/media/images/20201006/16/13767195/89613972/1/1_org.jpg",
+        "sizes" : ["Small"],
+        "category": "Sweatshirts"
+      },
+      { 
+        "id": 4, 
+        "name": "Delicious Camisole 4", 
+        "price": "80.00" ,
+        "img": "https://cdn.dsmcdn.com//ty14/product/media/images/20201006/16/13767195/89613972/1/1_org.jpg",
+        "sizes" : ["Small","Large"],
+        "category": "Dress"
+      }
+    ]
+}
