@@ -23,11 +23,12 @@ class ProductContainer extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        margin: 15
+        margin: 15,
+        width: '50%'
     },
     img: {
         width: '100%',
-        height: 190
+        height: 240
     },
     productName: {
         margin: 5,

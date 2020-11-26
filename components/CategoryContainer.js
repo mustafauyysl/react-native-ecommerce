@@ -1,12 +1,17 @@
 import React,{Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import { TouchableOpacity, Text, StyleSheet} from 'react-native';
 
 class CategoryContainer extends Component{
     render(){
         return(
-            <View style={styles.container}>
-                <Text style={styles.title}>Men</Text>
-            </View>
+            <TouchableOpacity 
+                onPress={this.props.onPress}
+                activeOpacity={0.8}
+                style={[styles.container, ,
+                    {alignItems: this.props.align%2==0 ? 'flex-end' : 'flex-start'
+                }]}>
+                <Text style={styles.title}>{this.props.name}</Text>
+            </TouchableOpacity>
         )
     }
 }
@@ -26,7 +31,6 @@ const styles = StyleSheet.create({
         elevation: 8,
         justifyContent: 'center',
         padding: 25,
-        alignItems: 'flex-end'
     },
     title: {
         fontSize: 25,

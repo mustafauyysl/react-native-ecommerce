@@ -33,15 +33,18 @@ class Header extends Component{
                 style={styles.iconContainer}
                 onPress={this.props.rightButtonPress}>
                 <View> 
-                    {
-                        this.props.rightButtonIcon ?
+     
                         <View style={styles.badgeIconView}>
+                        {
+                        this.props.cart.length > 0 && this.props.rightButtonIcon?
+                        <View>
                             <View style={styles.badgeContainer}>
                             <Text style={styles.badge} numberOfLines={1}>{this.calculateCartLength()}</Text>
                             </View>
                             <Icon name={this.props.rightButtonIcon} size={25}/>
-                        </View> : null
-                    }
+                        </View>
+                        : null }
+                        </View> 
                 </View>  
             </TouchableHighlight>
         )
@@ -51,7 +54,9 @@ class Header extends Component{
         return(
             <SafeAreaView style={styles.container}>
                 {this.leftButton()}
+                <View>
                 <Text style={styles.title}>{this.props.title}</Text>
+                </View>
                 {this.rightButton()}
             </SafeAreaView>
         )
@@ -64,14 +69,18 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
         width: '100%',
-        marginBottom: -25
+        zIndex: 1,
+        backgroundColor: '#fff',
+        paddingBottom: -20,
     },
     iconContainer: {
-        marginHorizontal: 15
+        marginHorizontal: 15,
+        width: '10%'
     },
     title: {
         fontSize: 24,
-        fontFamily: 'Dosis-Regular'
+        fontFamily: 'Dosis-Regular',
+        alignSelf: 'center'
     },
     badgeIconView:{
         position:'relative',
@@ -81,8 +90,8 @@ const styles = StyleSheet.create({
         color:'#fff',
         position:'absolute',
         zIndex:10,
-        top:-2,
-        right:-2,
+        top:-8,
+        right:-3,
         padding:2,
         backgroundColor: Colors.primaryColor,
         borderRadius: 15,

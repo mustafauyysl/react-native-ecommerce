@@ -6,6 +6,7 @@ import {bindActionCreators} from 'redux';
 import * as productsActions from '../../redux/actions/products';
 import Header from '../../components/Header';
 import Alert from '../../components/Alert';
+import ProductDetailScreen from './ProductDetailScreen';
 
 class HomeScreen extends Component{
     constructor(props){
@@ -19,8 +20,7 @@ class HomeScreen extends Component{
 
     showProductDetail = (item) => {
         this.props.actions.selectProduct(item);
-        this.props.navigation.dangerouslyGetParent().setOptions({  tabBarVisible: false })
-        this.props.navigation.navigate('ProductDetail')
+        this.props.actions.showProductDetail(true);
     }
 
     renderItem = (item) => {
@@ -40,7 +40,6 @@ class HomeScreen extends Component{
             <View style={styles.container}>
                 <Header 
                     title='Mershka'
-                    leftButtonIcon='align-left'
                     rightButtonIcon='shopping-cart'
                     rightButtonPress={() => this.props.navigation.navigate('Cart')}
                     cart={3}
@@ -51,6 +50,7 @@ class HomeScreen extends Component{
                     data={this.props.products}
                     numColumns={2}
                 />
+                <ProductDetailScreen />
             </View>
         )
     }

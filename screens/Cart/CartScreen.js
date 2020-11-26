@@ -21,11 +21,14 @@ class CartScreen extends Component{
                     leftButtonIcon='chevron-left'
                     leftButtonPress={() => this.props.navigation.goBack()}
                 />
-                <FlatList 
-                    keyExtractor={item => item.id}
-                    data={this.props.cart}
-                    renderItem={item => this.renderItem(item.item)}
-                />
+                <View style={styles.list}>
+                    <FlatList 
+                        keyExtractor={item => item.id}
+                        data={this.props.cart}
+                        renderItem={item => this.renderItem(item.item)}
+                    />
+                </View>
+
                 <View style={styles.footerContainer}>
                     <Button 
                         onPress={() => this.addToCart(this.props.selectProduct)}
@@ -52,6 +55,20 @@ const styles = StyleSheet.create({
         bottom: 0,
         width: '100%'
     },
+    list: {
+        backgroundColor: '#fff',
+        margin: 20,
+        borderRadius: 15,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 1,
+        },
+        shadowOpacity: 0.22,
+        shadowRadius: 2.22,
+
+        elevation: 3,
+    }
 })
 
 export default connect(mapStateToProps)(CartScreen);

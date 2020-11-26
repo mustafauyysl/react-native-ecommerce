@@ -8,6 +8,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import HomeScreen from '../screens/Home/HomeScreen';
 import ProductDetailScreen from '../screens/Home/ProductDetailScreen';
 import CategoriesScreen from '../screens/Categories/CategoriesScreen';
+import CategoryDetailScreen from '../screens/Categories/CategoryDetailScreen';
 import SearchScreen from '../screens/Search/SearchScreen';
 import ProfileScreen from '../screens/Profile/ProfileScreen';
 import CartScreen from '../screens/Cart/CartScreen';
@@ -18,6 +19,7 @@ import Colors from '../constants/colors';
 const BottomTabNavigator = createBottomTabNavigator();
 const MainStackNavigator = createStackNavigator();
 const HomeStackNavigator = createStackNavigator();
+const CategoryStackNavigator = createStackNavigator();
 
 Icon.loadFont();
 
@@ -45,6 +47,29 @@ const HomeStack = props => {
 
             </HomeStackNavigator.Screen>
         </HomeStackNavigator.Navigator>
+    )
+}
+
+const CategoryStack = props => {
+    return (
+        <CategoryStackNavigator.Navigator>
+            <CategoryStackNavigator.Screen
+                name='Categories'
+                component={CategoriesScreen}
+                options={{
+                    headerShown: false
+                }}
+            >
+            </CategoryStackNavigator.Screen>
+            <CategoryStackNavigator.Screen
+                name='CategoryDetail'
+                component={CategoryDetailScreen}
+                options={{
+                    headerShown: false
+                }}
+            >
+            </CategoryStackNavigator.Screen>
+        </CategoryStackNavigator.Navigator>
     )
 }
 
@@ -84,7 +109,7 @@ const MainBottomTabNavigator = props => {
             </BottomTabNavigator.Screen>
             <BottomTabNavigator.Screen
                 name='Categories'
-                component={CategoriesScreen}
+                component={CategoryStack}
             >
             </BottomTabNavigator.Screen>
             <BottomTabNavigator.Screen

@@ -7,16 +7,14 @@ class CartContainer extends Component{
         return(
             <View style={styles.container}>
                 <Icon style={styles.minusIcon} name='minus-circle' size={18} color='#800000'/>
-                <Image style={styles.img} source={{uri:'https://cdn.dsmcdn.com//ty14/product/media/images/20201006/16/13767195/89613972/1/1_org.jpg'}}/>
+                <Image style={styles.img} source={{uri: this.props.img}}/>
                 <View style={styles.description}>
-                    <Text>Delicious Camisole</Text>
-                    <Text>$78.00</Text>
-                    <Text>Black</Text>
-                    <Text>Small</Text>
+                    <Text style={styles.name}>{this.props.name}</Text>
+                    <Text style={styles.price}>${this.props.price}</Text>
                 </View>
                 <View style={styles.buttonContainer}>
                     <Icon style={styles.icon} name='plus' size={16} />
-                    <Text>7</Text>
+                        <Text>{this.props.amount}</Text>
                     <Icon style={styles.icon} name='minus' size={16} />
                 </View>
             </View>
@@ -51,7 +49,15 @@ const styles = StyleSheet.create({
         marginLeft: 20
     },
     description: {
-        marginLeft: 15
+        marginLeft: 15,
+        alignSelf: 'flex-start',
+        marginTop: 10
+    },
+    name: {
+        fontFamily: 'Dosis-Regular'
+    },
+    price: {
+        fontFamily: 'Dosis-Bold'
     }
 });
 

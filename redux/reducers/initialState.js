@@ -3,5 +3,7 @@ export default {
     showProductDetail: false,
     selectProduct: {},
     cart: [],
+    categories: [],
+    selectCategory: [],
     wishlist: 1
 }
