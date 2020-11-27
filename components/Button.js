@@ -8,7 +8,7 @@ class Button extends Component{
             <TouchableOpacity 
                 onPress={this.props.onPress}
                 activeOpacity={0.8}
-                style={styles.container}>
+                style={[styles.container,this.props.style]}>
                 <Text style={styles.buttonTitle}>{this.props.title}</Text>
             </TouchableOpacity>
         )

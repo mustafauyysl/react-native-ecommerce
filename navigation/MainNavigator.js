@@ -6,49 +6,24 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import HomeScreen from '../screens/Home/HomeScreen';
-import ProductDetailScreen from '../screens/Home/ProductDetailScreen';
 import CategoriesScreen from '../screens/Categories/CategoriesScreen';
 import CategoryDetailScreen from '../screens/Categories/CategoryDetailScreen';
 import SearchScreen from '../screens/Search/SearchScreen';
 import ProfileScreen from '../screens/Profile/ProfileScreen';
+import LoginScreen from '../screens/Profile/LoginScreen';
+import RegisterScreen from '../screens/Profile/RegisterScreen';
 import CartScreen from '../screens/Cart/CartScreen';
+import WishlistScreen from '../screens/Profile/WishlistScreen';
 
 import Icon from 'react-native-vector-icons/Feather';
 import Colors from '../constants/colors';
 
 const BottomTabNavigator = createBottomTabNavigator();
 const MainStackNavigator = createStackNavigator();
-const HomeStackNavigator = createStackNavigator();
 const CategoryStackNavigator = createStackNavigator();
+const ProfileStackNavigator = createStackNavigator();
 
 Icon.loadFont();
-
-const HomeStack = props => {
-    return (
-        <HomeStackNavigator.Navigator
-            mode='modal'
-        >
-            <HomeStackNavigator.Screen
-                name='Home'
-                component={HomeScreen}
-                options={{
-                    headerShown: false
-                }}
-            >
-
-            </HomeStackNavigator.Screen>
-            <HomeStackNavigator.Screen
-                name='ProductDetail'
-                component={ProductDetailScreen}
-                options={{
-                    headerShown: false
-                }}
-            >
-
-            </HomeStackNavigator.Screen>
-        </HomeStackNavigator.Navigator>
-    )
-}
 
 const CategoryStack = props => {
     return (
@@ -70,6 +45,45 @@ const CategoryStack = props => {
             >
             </CategoryStackNavigator.Screen>
         </CategoryStackNavigator.Navigator>
+    )
+}
+
+const ProfileStack = props => {
+    return (
+        <ProfileStackNavigator.Navigator>
+            <ProfileStackNavigator.Screen
+                name='Profile'
+                component={ProfileScreen}
+                options={{
+                    headerShown: false
+                }}
+            >
+            </ProfileStackNavigator.Screen>
+            <ProfileStackNavigator.Screen
+                name='WishList'
+                component={WishlistScreen}
+                options={{
+                    headerShown: false
+                }}
+            >
+            </ProfileStackNavigator.Screen>
+            <ProfileStackNavigator.Screen
+                name='Login'
+                component={LoginScreen}
+                options={{
+                    headerShown: false
+                }}
+            >
+            </ProfileStackNavigator.Screen>
+            <ProfileStackNavigator.Screen
+                name='Register'
+                component={RegisterScreen}
+                options={{
+                    headerShown: false
+                }}
+            >
+            </ProfileStackNavigator.Screen>
+        </ProfileStackNavigator.Navigator>
     )
 }
 
@@ -104,7 +118,7 @@ const MainBottomTabNavigator = props => {
         >
             <BottomTabNavigator.Screen
                 name='Home'
-                component={HomeStack}
+                component={HomeScreen}
             >
             </BottomTabNavigator.Screen>
             <BottomTabNavigator.Screen
@@ -119,7 +133,7 @@ const MainBottomTabNavigator = props => {
             </BottomTabNavigator.Screen>
             <BottomTabNavigator.Screen
                 name='Profile'
-                component={ProfileScreen}
+                component={ProfileStack}
             >
             </BottomTabNavigator.Screen>
         </BottomTabNavigator.Navigator>

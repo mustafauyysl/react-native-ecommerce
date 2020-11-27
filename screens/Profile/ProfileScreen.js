@@ -6,8 +6,9 @@ import ProfileOptionContainer from '../../components/ProfileOptionContainer';
 
 const options = [
     {id: 1, name: 'WishList'},
-    {id: 2, name: 'Login/Register'},
-    {id: 3, name: 'About us' }
+    {id: 2, name: 'Login'},
+    {id: 3, name: 'Register'},
+    {id: 4, name: 'About us'}
 ]
 
 class ProfileScreen extends Component{
@@ -16,6 +17,7 @@ class ProfileScreen extends Component{
         return (
             <ProfileOptionContainer 
                 text={item.name}
+                onPress={() => this.props.navigation.navigate(item.name)}
             />
         )
     }

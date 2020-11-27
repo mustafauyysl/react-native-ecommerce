@@ -1,21 +1,28 @@
 import React,{Component} from 'react';
 import {View,Text,StyleSheet,Image} from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/Feather';
 
 class CartContainer extends Component{
     render(){
         return(
             <View style={styles.container}>
-                <Icon style={styles.minusIcon} name='minus-circle' size={18} color='#800000'/>
+                <TouchableOpacity onPress={this.props.removeFromCartPress}>
+                    <Icon style={styles.minusIcon} name='minus-circle' size={18} color='#800000'/>
+                </TouchableOpacity>
                 <Image style={styles.img} source={{uri: this.props.img}}/>
                 <View style={styles.description}>
                     <Text style={styles.name}>{this.props.name}</Text>
                     <Text style={styles.price}>${this.props.price}</Text>
                 </View>
                 <View style={styles.buttonContainer}>
-                    <Icon style={styles.icon} name='plus' size={16} />
+                    <TouchableOpacity onPress={this.props.plusPress}>
+                        <Icon style={styles.icon} name='plus' size={16} />
+                    </TouchableOpacity>
                         <Text>{this.props.amount}</Text>
-                    <Icon style={styles.icon} name='minus' size={16} />
+                    <TouchableOpacity onPress={this.props.minusPress}>
+                        <Icon style={styles.icon} name='minus' size={16} />
+                    </TouchableOpacity>
                 </View>
             </View>
         )
@@ -25,7 +32,7 @@ class CartContainer extends Component{
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        justifyContent: 'center',
+        justifyContent: 'space-around',
         alignItems: 'center',
         margin: 10
     },

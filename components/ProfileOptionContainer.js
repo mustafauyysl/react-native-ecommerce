@@ -7,6 +7,7 @@ class ProfileOptionContainer extends Component{
     render(){
         return (
             <TouchableOpacity 
+                onPress={this.props.onPress}
                 activeOpacity={0.8}
                 style={styles.container}>
                 <Text style={styles.text}>{this.props.text}</Text>

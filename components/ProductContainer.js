@@ -1,8 +1,12 @@
 import React, {Component} from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
-import Icon from 'react-native-vector-icons/Feather';
+import Icon from 'react-native-vector-icons/Ionicons';
+
+Icon.loadFont();
 
 class ProductContainer extends Component {
+
+
     render(){
         return(
             <TouchableOpacity 
@@ -12,9 +16,15 @@ class ProductContainer extends Component {
                 <Image style={styles.img} resizeMode='stretch' source={{uri: this.props.productImg}} />
                 <Text style={styles.productName}>{this.props.productName}</Text>
                 <Text style={styles.productPrice}>${this.props.productPrice}</Text>
-                <TouchableOpacity style={styles.heartButton}>
-                    <Icon name='heart' size={18} color='gray'/>
-                </TouchableOpacity>
+                {
+                    this.props.checkLiked ? 
+                    <TouchableOpacity style={styles.heartButton} onPress={this.props.dislikePress}>
+                        <Icon name='heart' size={20} color='#CC3D5C' />
+                    </TouchableOpacity> :                 
+                    <TouchableOpacity style={styles.heartButton} onPress={this.props.likePress}>
+                        <Icon name='heart-outline' size={20}  />
+                    </TouchableOpacity>
+                }
             </TouchableOpacity>
         )
     }

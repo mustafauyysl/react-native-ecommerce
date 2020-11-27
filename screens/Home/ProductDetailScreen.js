@@ -60,7 +60,7 @@ class ProductDetailScreen extends Component{
                         leftButtonPress={() => this.goBack()}
                     /> 
                     <ScrollView>
-                        <Image style={styles.img} source={{uri:'https://cdn.dsmcdn.com//ty14/product/media/images/20201006/16/13767195/89613972/1/1_org.jpg'}} />
+                        <Image style={styles.img} source={{uri: this.props.selectProduct.img}} />
                         <View style={styles.header}>
                             <Text style={styles.productName}>{this.props.selectProduct.name}</Text>
                             <Text style={styles.productPrice}>${this.props.selectProduct.price}</Text>
@@ -73,12 +73,12 @@ class ProductDetailScreen extends Component{
 
                     </ScrollView>
                     <Animated.View style={[styles.alertContainer,animatedStyles]}>
-                        <Alert title={this.props.selectProduct.name+ ' sepete eklendi.'}/>
+                        <Alert title={this.props.selectProduct.name+ ' added to cart.'}/>
                     </Animated.View>
                     <View style={styles.footerContainer}>
                         <Button 
                             onPress={() => this.addToCart(this.props.selectProduct)}
-                            title='Sepete Ekle'
+                            title='Add To Cart'
                         />
                     </View>
                 </View>
@@ -150,6 +150,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         width: '100%',
+        zIndex: 2
     }
 });
 

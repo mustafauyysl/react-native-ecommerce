@@ -25,6 +25,18 @@ export default function cartReducer(state = initialState.cart, action) {
           (cartItem) => cartItem.product.id !== action.payload.id
         );
         return newState2;
+
+      case actionTypes.DECREASE_BY_ONE:
+        var newState3 = state.map((cartItem) => {
+          if (cartItem.product.id === action.payload.product.id) {
+              return Object.assign({}, cartItem, {
+                  quantity: cartItem.quantity -1,
+              });
+          }
+          return cartItem;
+            });
+        var finalState = newState3.filter(x => x.quantity !== 0);
+           return finalState;
       default:
         return state;
     }

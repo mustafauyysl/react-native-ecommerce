@@ -5,5 +5,5 @@ export default {
     cart: [],
     categories: [],
     selectCategory: [],
-    wishlist: 1
+    wishlist: []
 }

@@ -30,10 +30,12 @@ class CategoryDetailScreen extends Component{
         return (
             <View>
                 <Header 
+                    title='Mershka'
                     leftButtonIcon='chevron-left'
                     leftButtonPress={() => this.props.navigation.goBack()}
                 />
                 <FlatList 
+                    numColumns={2}
                     data={this.props.products}
                     keyExtractor={item => item.id}
                     renderItem={item => this.renderItem(item.item)}
