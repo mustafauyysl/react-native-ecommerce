@@ -1,4 +1,5 @@
 # Mershka
+
 e-Commerce App - React Native, Redux, JSON Server
 
 # Installation
@@ -9,6 +10,7 @@ Firstly, run json data in project folder.
 cd api
 json-server --watch db.json
 ```
+
 After, npm install and run project
 
 ```

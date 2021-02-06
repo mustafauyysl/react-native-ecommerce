@@ -1,96 +1,94 @@
 {
-    "products": [
-      { 
-        "id": 1, 
-        "name": "Product 1", 
-        "price": "78.00" ,
-        "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product.jpg",
-        "sizes" : ["Small","Large"],
-        "category": "Category 1",
-        "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
-      },
-      { 
-        "id": 2, 
-        "name": "Product 2", 
-        "price": "45.00" ,
-        "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product1.jpg",
-        "sizes" : ["Small","Large","Medium"],
-        "category": "Category 2",
-        "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
-
-      },
-      { 
-        "id": 3, 
-        "name": "Product 3", 
-        "price": "12.00" ,
-        "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product2.jpg",
-        "sizes" : ["Small"],
-        "category": "Category 3",
-        "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
-
-      },
-      { 
-        "id": 4, 
-        "name": "Product 4", 
-        "price": "80.00" ,
-        "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product3.jpg",
-        "sizes" : ["Small","Large"],
-        "category": "Category 4",
-        "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
-      },
-      { 
-        "id": 5, 
-        "name": "Product 5", 
-        "price": "105.00" ,
-        "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product4.jpg",
-        "sizes" : ["Small","Medium","Large"],
-        "category": "Category 1",
-        "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
-      },
-      { 
-        "id": 6, 
-        "name": "Product 6", 
-        "price": "40.00" ,
-        "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product5.jpg",
-        "sizes" : ["Small","Medium"],
-        "category": "Category 2",
-        "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
-      },
-      { 
-        "id": 7, 
-        "name": "Product 7", 
-        "price": "37.00" ,
-        "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product6.jpg",
-        "sizes" : ["Small"],
-        "category": "Category 3",
-        "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
-      },
-      { 
-        "id": 8, 
-        "name": "Product 8", 
-        "price": "61.00" ,
-        "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product7.jpg",
-        "sizes" : ["Small","Medium","Large"],
-        "category": "Category 4",
-        "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
-      }
-    ],
-    "categories": [
-      {
-        "id": 1,
-        "name": "Category 1"
-      },
-      {
-        "id": 2,
-        "name": "Category 2"
-      },
-      {
-        "id": 3,
-        "name": "Category 3"
-      },
-      {
-        "id": 4,
-        "name": "Category 4"
-      }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "price": "78.00",
+      "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product.jpg",
+      "sizes": ["Small", "Large"],
+      "category": "Category 1",
+      "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "price": "45.00",
+      "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product1.jpg",
+      "sizes": ["Small", "Large", "Medium"],
+      "category": "Category 2",
+      "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "price": "12.00",
+      "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product2.jpg",
+      "sizes": ["Small"],
+      "category": "Category 3",
+      "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
+    },
+    {
+      "id": 4,
+      "name": "Product 4",
+      "price": "80.00",
+      "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product3.jpg",
+      "sizes": ["Small", "Large"],
+      "category": "Category 4",
+      "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
+    },
+    {
+      "id": 5,
+      "name": "Product 5",
+      "price": "105.00",
+      "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product4.jpg",
+      "sizes": ["Small", "Medium", "Large"],
+      "category": "Category 1",
+      "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
+    },
+    {
+      "id": 6,
+      "name": "Product 6",
+      "price": "40.00",
+      "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product5.jpg",
+      "sizes": ["Small", "Medium"],
+      "category": "Category 2",
+      "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
+    },
+    {
+      "id": 7,
+      "name": "Product 7",
+      "price": "37.00",
+      "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product6.jpg",
+      "sizes": ["Small"],
+      "category": "Category 3",
+      "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
+    },
+    {
+      "id": 8,
+      "name": "Product 8",
+      "price": "61.00",
+      "img": "http://mustafauysal.com.tr/projects/mershka/img/products/product7.jpg",
+      "sizes": ["Small", "Medium", "Large"],
+      "category": "Category 4",
+      "description": "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. "
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Category 1"
+    },
+    {
+      "id": 2,
+      "name": "Category 2"
+    },
+    {
+      "id": 3,
+      "name": "Category 3"
+    },
+    {
+      "id": 4,
+      "name": "Category 4"
+    }
+  ]
 }

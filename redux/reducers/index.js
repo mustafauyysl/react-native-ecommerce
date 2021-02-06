@@ -1,4 +1,3 @@
-
 import {combineReducers} from 'redux';
 import productsListReducer from './products/productsListReducer';
 import showProductDetailReducer from './products/showProductDetailReducer';
@@ -9,13 +8,13 @@ import categoriesListReducer from './categories/categoriesListReducer';
 import selectCategoryReducer from './categories/selectCategoryReducer';
 
 const rootReducer = combineReducers({
-    productsListReducer,
-    showProductDetailReducer,
-    selectProductReducer,
-    cartReducer,
-    wishlistReducer,
-    categoriesListReducer,
-    selectCategoryReducer
-})
+  productsListReducer,
+  showProductDetailReducer,
+  selectProductReducer,
+  cartReducer,
+  wishlistReducer,
+  categoriesListReducer,
+  selectCategoryReducer,
+});
 
 export default rootReducer;
